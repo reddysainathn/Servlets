@@ -1,0 +1,30 @@
+import java.util.Properties;
+
+import javax.mail.Authenticator;
+import javax.mail.PasswordAuthentication;
+
+
+public class SendMail {
+	
+		public static void main(String[] args) {
+			Properties  property = new Properties();
+			
+			property.setProperty("mailhost", "mail.sainath.com");
+			property.setProperty("mail.smpt.port", "26");
+			property.setProperty("mail.smtp.auth", "true");
+			
+			
+			Authenticator auth = new Authenticator() {
+
+				@Override
+				protected PasswordAuthentication getPasswordAuthentication() {
+					// TODO Auto-generated method stub
+					return new PasswordAuthentication("sainathreddynarahari6@gmail.com", password);
+				}
+				
+				 
+			};
+			
+		}
+
+}

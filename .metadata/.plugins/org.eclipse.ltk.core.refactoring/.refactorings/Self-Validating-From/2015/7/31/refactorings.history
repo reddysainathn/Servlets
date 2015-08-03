@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;FormValidationUsingMVC/src&apos;&#x0D;&#x0A;- Original project: &apos;Self-Validating-From&apos;&#x0D;&#x0A;- Destination element: &apos;FormValidationUsingMVC/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Self-Validating-From/src/controller&#x0D;&#x0A;     Self-Validating-From/src/test&#x0D;&#x0A;     Self-Validating-From/src/beans" description="Copy packages" destination="=FormValidationUsingMVC/src" element1="/src&lt;controller" element2="/src&lt;test" element3="/src&lt;beans" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1438373926975" version="1.0"/>
+</session>

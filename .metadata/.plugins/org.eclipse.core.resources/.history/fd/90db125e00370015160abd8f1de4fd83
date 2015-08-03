@@ -1,0 +1,8 @@
+package beans;
+
+public class User {
+	//Beans should have get and set methods definitely
+
+	private String Email;
+	private String password;
+}
