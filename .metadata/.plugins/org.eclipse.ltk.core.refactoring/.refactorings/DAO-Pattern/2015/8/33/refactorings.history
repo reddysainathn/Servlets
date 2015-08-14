@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DAO-Pattern/Notes.txt&apos; to &apos;NotesDAO.txt&apos;" description="Rename resource &apos;Notes.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Notes.txt" name="NotesDAO.txt" stamp="1439095191663" updateReferences="true"/>
+</session>

@@ -1,0 +1,12 @@
+DAO(Data Access Object)
+
+Design Pattern will tell how to solve the problem
+
+In order to write Data Access Code we write DAO
+
+It helps us to separate data access code from rest of the application 
+
+Advantages -->This pattern helps to separates data access code from the rest of the application
+		   -->DAO provides an abstraction over the DB server.
+		   -->DAO provides an Object Oriented View of the DB server
+		   -->DAO helps to develop reusable Data Access Code.

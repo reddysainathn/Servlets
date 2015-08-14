@@ -189,4 +189,8 @@
   <uri id="org.w3c.xinclude" name="http://www.w3.org/2001/XInclude" uri="jar:file:/C:/SOFT/eclipse/plugins/org.eclipse.wst.xsl.core_1.1.301.v201405151730.jar!/xslt-schemas/xinclude.xsd"/>
   <uri name="urn:ui:com.google.gwt.uibinder" uri="http://dl.google.com/gwt/dtd/uibinder.xsd"/>
   <uri name="urn:import:com.google.gwt.user.client.ui" uri="http://dl.google.com/gwt/dtd/com.google.gwt.user.client.ui.xsd"/>
+  <public publicId="-//Hibernate/Hibernate Mapping DTD 3.0//EN" uri="file:/C:/SOFT/eclipse/plugins/org.hibernate.eclipse.mapper_4.0.1.Final-v20150324-2307-B95/dtd/hibernate-mapping-3.0.dtd" webURL="http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"/>
+  <public publicId="-//Hibernate/Hibernate Configuration DTD 3.0//EN" uri="file:/C:/SOFT/eclipse/plugins/org.hibernate.eclipse.mapper_4.0.1.Final-v20150324-2307-B95/dtd/hibernate-configuration-3.0.dtd" webURL="http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd"/>
+  <public publicId="-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" uri="file:/C:/SOFT/eclipse/plugins/org.hibernate.eclipse.mapper_4.0.1.Final-v20150324-2307-B95/dtd/hibernate-reverse-engineering-3.0.dtd"/>
+  <public publicId="-//Red Hat, Inc.//DTD Meta 1.0//EN" uri="file:/C:/SOFT/eclipse/plugins/org.jboss.tools.common.model_3.6.2.Final-v20150325-0456-B99/schema/meta.dtd"/>
 </catalog>

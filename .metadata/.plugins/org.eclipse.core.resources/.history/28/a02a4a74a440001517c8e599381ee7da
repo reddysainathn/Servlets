@@ -1,0 +1,39 @@
+package com.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="bid")
+public class Bid {
+	
+	@Id
+	@Column(name="bid_id")
+	private int id;
+	@Column(name="bid_price")
+	private float bidAmount;
+	public Bid() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Bid(int id, float bidAmount) {
+		super();
+		this.id = id;
+		this.bidAmount = bidAmount;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public float getBidAmount() {
+		return bidAmount;
+	}
+	public void setBidAmount(float bidAmount) {
+		this.bidAmount = bidAmount;
+	}
+	
+}

@@ -1,0 +1,30 @@
+package com.util;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+
+public class HibernateUtil {
+
+	private static SessionFactory sessionFactroy;
+	
+	static{
+		
+		
+		// We instantiate configuration class,and call configure method
+		// configure method will search for hibernate.cfg.xml as default file name in the path
+		
+		//We can change the name of the configuration 
+		//file name hibernate.cfg.xml and  pass the name explicitely
+		
+		Configuration configuration = new Configuration();
+		
+		configuration.configure();
+		// 
+		ServiceRegistry serviceRegistry = (ServiceRegistry) new StandardServiceRegistryBuilder();
+		
+		sessionFactroy = configuration.buildSessionFactory(serviceRegistry);
+	}
+	
+}

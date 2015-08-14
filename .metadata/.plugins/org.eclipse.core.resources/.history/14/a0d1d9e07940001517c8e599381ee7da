@@ -1,0 +1,35 @@
+Domain model
+	Domain model provides  a conceptual image of the problem domain
+	 for which are developing in the applications.
+	 
+	 Describes various entities and their attributes,relationships,and the constraints(cardinality and 
+	 Originality)that govern the problem domain.
+	 
+	 Domain refers to target business.
+	 
+	 Cardinality Constraints means Multiplicity,
+	 it describes the number of objects involved in the association
+	 
+Online Shop
+	 Domain Objects/Entity objects
+	 -Cart
+	 -Item
+	 -Bill
+	 -Address
+	 -Buyers
+	 -Sellers
+	 -Bid
+	 -Category/Department
+	 
+	 Cardinality Constraints:::::
+	 Association between Objects
+	 
+		 Buyer-Address(One-One)
+		 Seller-Address(One-One)
+		 Item-Cart(Many-One)
+		 Item-Category/Department(Many-Many)
+		 Cart-Buyer(One-One)
+		 Buyer-Bid(One-Many)
+		 Seller-Item(One-Many)
+		 
+	  Optionality / Ordinality Constraints(It decides whether the object here is mandatory or Optional)

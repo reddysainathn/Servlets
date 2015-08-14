@@ -1,0 +1,10 @@
+Inheritance Mappings
+	How the inheritance is represented in DB?
+		Does DB server support Inheritance??___NO
+		
+		
+Inheritance Mapping Statergies
+	1.Single Table/Table per class hierarchy
+	2.Table per subclass/class
+	3.Joined Table	
+		

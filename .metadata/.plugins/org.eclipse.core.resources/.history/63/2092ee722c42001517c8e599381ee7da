@@ -1,0 +1,121 @@
+package com.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class ClothesPageServlet
+ */
+@WebServlet("/clothesPage")
+public class ClothesPageServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public ClothesPageServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+    protected void doGet(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+    	
+    	Cookie[] coockies = request.getCookies();
+    	PrintWriter out = response.getWriter();
+    	
+    	out.println("<h3 align='center'>Selected Items </h3>");
+    	out.println("<h3>Item Details:</h3>");
+    	out.println("");
+    	int i=0;
+    	for (Cookie cookie : coockies) {
+			
+    		switch (cookie.getName()) {
+			case "item1":
+				out.println(++i+")"+cookie.getValue());
+				out.println("<br>");
+				cookie.setMaxAge(0);
+				break;
+			case "item2":
+				out.println(++i+")"+cookie.getValue());
+				out.println("<br>");
+				cookie.setMaxAge(0);
+				break;
+			case "item3":
+				out.println(++i+")"+cookie.getValue());
+				out.println("<br>");
+				cookie.setMaxAge(0);
+				break;
+			case "item4":
+				out.println(++i+")"+cookie.getValue());
+				out.println("<br>");
+				cookie.setMaxAge(0);
+				break;
+			case "item5":
+				out.println(++i+")"+cookie.getValue());
+				out.println("<br>");
+				cookie.setMaxAge(0);
+				break;
+			case "item6":
+				out.println(++i+")"+cookie.getValue());
+				out.println("<br>");
+				cookie.setMaxAge(0);
+				break;
+			/*case "item7":
+				out.println(++i+")"+cookie.getValue());
+				out.println("<br>");
+				cookie.setMaxAge(0);
+				break;
+			case "item8":
+				out.println(++i+")"+cookie.getValue());
+				out.println("<br>");
+				cookie.setMaxAge(0);
+				break;
+			case "item9":out.println(++i+")"+cookie.getValue());
+			out.println("<br>");
+			cookie.setMaxAge(0);
+			break;*/
+				
+			default:
+				break;
+			}
+		}
+    	
+		String item7 = request.getParameter("item7");
+		String item8 = request.getParameter("item8");
+		String item9 = request.getParameter("item9");
+
+		if (item7 != null) {
+
+			Cookie cookie1 = new Cookie("item7", item7);
+			response.addCookie(cookie1);
+
+		}
+		if (item8 != null) {
+
+			Cookie cookie2 = new Cookie("item8", item8);
+			response.addCookie(cookie2);
+
+		}
+		if (item9 != null) {
+
+			Cookie cookie3 = new Cookie("item9", item9);
+			response.addCookie(cookie3);
+
+		}
+
+		RequestDispatcher requestDispacher = request.getRequestDispatcher(".jsp");
+		requestDispacher.forward(request, response);
+	}
+}

@@ -1,0 +1,15 @@
+Inheritance Mappings
+	How the inheritance is represented in DB?
+		Does DB server support Inheritance??___NO
+		
+		
+Inheritance Mapping Strategies
+	1.Single Table/Table per class hierarchy
+		
+		(Buyer and Seller Records are in the same table)
+		
+			The
+		
+	2.Table per subclass/class
+	3.Joined Table	
+		

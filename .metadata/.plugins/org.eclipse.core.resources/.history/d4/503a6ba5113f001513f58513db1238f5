@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<h2 align="center">Search Product</h2>
+
+<form action="productSearch">
+CityID:<input type="text"  name="cityId"/>
+<input type="submit" value="SEARCH">
+
+</form>
+</body>
+</html>

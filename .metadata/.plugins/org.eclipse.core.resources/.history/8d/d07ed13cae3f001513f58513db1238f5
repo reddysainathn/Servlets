@@ -1,0 +1,23 @@
+package com.controller;
+
+import java.io.IOException;
+import javax.servlet.GenericServlet;
+import javax.servlet.Servlet;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet("/AccountServlet")
+public class AccountServlet extends GenericServlet implements Servlet {
+	
+	public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
+
+	System.out.println("************AccountServlet service()********");
+	System.out.println("<html><body>");
+	
+	System.out.println("</body></html>");
+		
+	}
+
+}

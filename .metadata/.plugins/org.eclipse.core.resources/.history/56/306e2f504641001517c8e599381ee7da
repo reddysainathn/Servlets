@@ -1,0 +1,32 @@
+HQL(Hibernate Query Language) will Overcome many problems to query with SQL
+
+	-->HQL is Object Oriented Query language
+		-->When we fetch records from DB server,we get Objects using HQL
+		-->We don't use any table or column details to query,we use Class and property details
+	-->HQL is  DataBase Independent
+		-->THe Queries will not execute directly,it 
+		
+Criteria is also used to execute query or fetch the record.
+	How is it different from HQL?
+		If we know SQL,we can write HQL easily,without any issues
+		
+	What if you are not familiar with SQL?
+		Criteria is  used to create SQL queries
+		Without writing queries here with method calls we create queries
+		
+Criteria is a combination of method calls
+		
+Restrictions
+
+	>	-->gt() greater than
+	<	-->lt() lesser than
+	>=	-->ge() greater than or equal to
+	<=  -->le() lesser than or equal to
+	!=  -->ne() Not equal to
+	AND -->AND operator
+	OR -->OR Operator
+	Between -->Between Operator
+	in -->in operator
+	like -->Like Operator
+	
+	

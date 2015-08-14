@@ -1,0 +1,5 @@
+Servlet::
+	->Is a web-component,it resides on the server.it is one of the core components of Web-Application
+	->Servlets are responsible for handling a web clients request,it will process the clients request 
+		and generates a response dynamically and sends back to the client
+	->

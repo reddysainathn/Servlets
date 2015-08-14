@@ -1,0 +1,43 @@
+package com.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/mobilePage")
+public class MobilePageServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	public MobilePageServlet() {
+		super();
+	}
+
+	protected void doGet(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		String item1 = request.getParameter("item1");
+		String item2 = request.getParameter("item2");
+		String item3 = request.getParameter("item3");
+
+		if (item1 != null) {
+
+			Cookie cookie1 = new Cookie("item1", item1);
+
+		}
+		if (item2 != null) {
+
+			Cookie cookie2 = new Cookie("item2", item2);
+
+		}
+		if (item3 != null) {
+
+			Cookie cookie3 = new Cookie("item3", item3);
+
+		}
+	}
+
+}

@@ -1,0 +1,67 @@
+package com.controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class SoapPageServlet
+ */
+@WebServlet("/soapPage")
+public class SoapPageServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public SoapPageServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+    protected void doGet(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		String item4 = request.getParameter("item4");
+		String item5 = request.getParameter("item5");
+		String item6 = request.getParameter("item6");
+
+		if (item4 != null) {
+
+			Cookie cookie1 = new Cookie("item1", item1);
+			response.addCookie(cookie1);
+
+		}
+		if (item2 != null) {
+
+			Cookie cookie2 = new Cookie("item2", item2);
+			response.addCookie(cookie2);
+
+		}
+		if (item3 != null) {
+
+			Cookie cookie3 = new Cookie("item3", item3);
+			response.addCookie(cookie3);
+
+		}
+
+		RequestDispatcher requestDispacher = request.getRequestDispatcher("soap.jsp");
+		requestDispacher.forward(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+}

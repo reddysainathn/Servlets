@@ -1,0 +1,18 @@
+Design of JDBC::
+
+	1.Many DB's servers are available in Market ,they have their own protocols
+
+JDBC API::
+	1.All Vendors will implement same Interfaces for their API's
+			--Set of Interfaces are same
+JDBC Classes::
+	--Set of classes which implement JSBC API Interfaces--In this classes wo got a code to connect to the DB server and interact with it.
+	--Every DB vendor will provide the JDBC drivers to connect to their respective DB servers
+
+Driver Manager::
+	It is mainly responsible for managing JDBC drivers
+	JDBC drivers have to register with the Driver Manager
+	Driver Manager will use appropriate JDBC drivers to connect to the servers
+	
+	
+Type-4/Thin Drivers are purely developed by Java(Other types are not used regularly)

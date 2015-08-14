@@ -1,7 +1,0 @@
-package beans;
-
-public class TestBean {
-
-	//Accessing JSTL-bean.jsp using Beans
-	
-}

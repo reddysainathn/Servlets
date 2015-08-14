@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Mobiles Department</title>
+</head>
+<body>
+
+<h2 align="center">Mobiles</h2>
+
+<form action="">
+<div align="center">
+<table>
+
+<tr><td align="left" >Sony M4 Aqua</td><td rowspan="2"><input type="checkbox" value="SonyM4" name="item1"></td></tr>
+<tr><td align="left" >HTC M9</td><td rowspan="2"><input type="checkbox" value="htcm9" name="item2"></td></tr>
+<tr><td align="left" >Note 5</td><td rowspan="2"><input type="checkbox" value="note5" name="item3"></td></tr>
+</table>
+
+</form>
+</div>
+</body>
+</html>
