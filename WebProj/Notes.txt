@@ -1,0 +1,16 @@
+Http method to specify what type of request is placed
+
+
+Http Request
+	1.request line
+	2.headers
+	3.message Body
+	
+	
+	Types of methods
+		1.GET
+		2.POST
+		3.PUT-to add resource on the server
+		4.DELETE-to delete a source on the server
+		5.HEAD-resource details will be fetched(Resource details are resorce name and size and last modified)
+		

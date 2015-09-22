@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<context-param>
-    
-    <param-name>username</param-name>
-    <param-value>root</param-value>
-    
-</context-param>

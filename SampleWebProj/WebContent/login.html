@@ -3,18 +3,74 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Login Form</title>
+<script src="jqlib/jquery-1.11.3.min.js">
+
+
+
+
+
+
+</script>
+
+
+<script type="text/javascript">
+	function validateForm() {
+
+		var uname = document.getElementById("username").value;
+
+		var pass = document.getElementById("password").value;
+
+		if (uname == "" || uname == null) {
+
+			/* alert("Please Provide Username"); */
+			
+			document.getElementById("message").innerHTML="<font color='red'>Username is Required</font>"
+			
+			return false;
+		}
+
+	}
+	
+	function changeCase(field) {
+		
+		alert("onchange");
+		
+		field.value = field.value.toUpperCase();
+		
+	}
+	
+	function changeBackGround(field) {
+		
+		field.style.background="#E8E8E8";
+		
+	}
+function changeBackGroundBlur(field) {
+		
+		field.style.background="#FFFFFF";
+		
+	}
+</script>
 </head>
 <body>
-<h2 align="center">Login form</h2>
-<h2 align="center">Register Form</h2>
+	<h2 align="center">Login form</h2>
+	<h2 align="center">Register Form</h2>
 
-<form action="LoginServlet">
-<table>
+	<form action="LoginServlet" onsubmit="return   validateForm()">
+		<table>
 
-<tr><td>Username</td><td><input type="text" name="username"/></td></tr>
-<tr><td>password</td><td><input type="password" name="password"/></td></tr>
-<tr><td><input type="submit" value="REGISTER"></td></tr>
-</table>
-</form>
+			<tr>
+				<td>Username</td>
+				<td><input id="username" type="text" name="username" onblur="changeBackGroundBlur(this)"  onchange="changeCase(this)" onfocus="changeBackGround(this)"/></td>
+				<td><div id="message"></div> </td>
+			</tr>
+			<tr>
+				<td>password</td>
+				<td><input id="password" type="password" name="password" onblur="changeBackGroundBlur(this)" onfocus="changeBackGround(this)"/></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="REGISTER"></td>
+			</tr>
+		</table>
+	</form>
 </body>
 </html>

@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.hibernate.SessionFactory;
+
 import com.vo.ShopCart;
 
 @WebServlet("/mobilePage")
@@ -30,6 +32,8 @@ public class MobilePageServlet extends HttpServlet {
 		String item2 = request.getParameter("item2");
 		String item3 = request.getParameter("item3");
 		
+		
+		
 		ShopCart cart = new ShopCart();
 		
 		
@@ -47,7 +51,7 @@ public class MobilePageServlet extends HttpServlet {
 		//If no previous sessions,it will create new session
 		HttpSession session = request.getSession();
 		session.setAttribute("cart", cart);
-
+session.setAttribute("count", cart.getItemList().size());
 		/*Using cookies
 		 * if (item1 != null) {
 

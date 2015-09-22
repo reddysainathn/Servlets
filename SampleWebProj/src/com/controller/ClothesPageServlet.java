@@ -41,7 +41,7 @@ public class ClothesPageServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		
 		ShopCart cart = (ShopCart) session.getAttribute("cart");
-		
+		session.setAttribute("count", cart.getItemList().size());
 		PrintWriter out = response.getWriter();
 		
 		out.println(session.getId());

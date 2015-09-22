@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<!DOCTYPE struts PUBLIC
+		"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+		"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.custom.i18n.resources" value="messages"></constant>
+	<package name="default" namespace="/" extends="struts-default">
+
+		<interceptors>
+			<interceptor name="myInterceptor" class="com.interceptor.CustomInterceptor"></interceptor>
+		</interceptors>
+		<action name="cityAction" class="com.action.CityAction">
+			<result name="success">/cityView.jsp</result>
+			
+		</action>
+		<action name="loginProcess" class="com.action.LoginAction">
+			<result name="success">/welcome.jsp</result>
+			<result name="input">/login.jsp</result>
+			<!-- Here using logger and timer,the default interceptor are getting disturbed 
+				,so we have to explicitely configure them,using "defaultStack" -->
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<interceptor-ref name="logger"></interceptor-ref>
+			<interceptor-ref name="timer"></interceptor-ref>
+			<interceptor-ref name="myInterceptor"></interceptor-ref>
+			<interceptor-ref name="execAndWait"/>  
+		
+		</action>
+		<action name="allCities" class="com.action.AllCitiesAction">
+			<result name="success">/cityRecord.jsp</result>
+			<interceptor-ref name="logger"></interceptor-ref>
+			<interceptor-ref name="timer"></interceptor-ref>
+		</action>
+		
+
+	</package>
+	<!-- Include the module xml files here -->
+	<include file="struts-staff.xml"></include>
+	<include file="struts-customer.xml"></include>
+</struts>

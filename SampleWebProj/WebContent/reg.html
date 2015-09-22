@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register Page</title>
+
+<script type="text/javascript">
+
+var  xmlHttpReq;
+
+function validateUserName(unameRef) {
+	
+	var uname = unameRef.value;
+	
+
+	if (window.XMLHttpRequest)
+	  {// code for IE7+, Firefox, Chrome, Opera, Safari
+	  xmlHttpReq=new XMLHttpRequest();
+	  }
+	else
+	  {// code for IE6, IE5
+	  xmlHttpReq=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	//register callback Function
+	xmlHttpReq.onreadystatechange = processResponse;
+	//Adding Request Information to the XMLHTTPRequest Object
+	xmlHttpReq.open('GET','validateUnameServ?username='+uname,true);
+	 
+	xmlHttpReq.send(null);
+}
+
+function processResponse(){
+	
+	if (xmlHttpReq.readyState==4 ) {
+    if(xmlHttpReq.status==200){
+    document.getElementById("message").innerHTML=xmlHttpReq.responseText;
+    }
+	}
+	
+}
+</script>
+</head>
+<body>
+
+
+	<h2 align="center">Register Form</h2>
+
+	<form id="registerForm" action="registerProcess" method="post">
+		<table>
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="username" onchange="validateUserName(this)"/></td>
+				<td><div id="message"></div></td>
+			</tr>
+			<tr>
+				<td>First name</td>
+				<td><input type="text" name="firstname" /></td>
+			</tr>
+			<tr>
+				<td>Last name</td>
+				<td><input type="text" name="lastname" /></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email" /></td>
+			</tr>
+			<tr>
+				<td>city</td>
+				<td><input type="text" name="city" /></td>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td><input type="text" name="phone" /></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="REGISTER" style="align: center"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

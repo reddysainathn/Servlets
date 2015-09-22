@@ -1,6 +1,0 @@
-Design of JDBC::
-
-	1.Many DB's servers are available in Market ,they have their own protocols
-
-JDBC API::
-	1.All Vendors will implement same Interfaces for their API's

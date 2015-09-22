@@ -55,15 +55,15 @@ public class CitySearch extends GenericServlet implements Servlet {
 	out.println("<html><body>");
 	out.println("<h2 align='center'>City Record</h2>");
 	out.println("<table border =2 align='center'>");
-	out.println("<tr><th>id</td><th>name</td><th>countrycode</td><th>district</td><th>population</td></tr>");
+	out.println("<tr><th>id</th><th>name</th><th>countrycode</th><th>district</th><th>population</th></tr>");
 	
 	out.println("<tr>");
 	
-	out.println("<th>"+city.getId()+"</td>");
-	out.println("<th>"+city.getName()+"</td>");
-	out.println("<th>"+city.getCountryCode()+"</td>");
-	out.println("<th>"+city.getDistrict()+"</td>");
-	out.println("<th>"+city.getPoulation()+"</td>");
+	out.println("<td>"+city.getId()+"</td>");
+	out.println("<td>"+city.getName()+"</td>");
+	out.println("<td>"+city.getCountryCode()+"</td>");
+	out.println("<td>"+city.getDistrict()+"</td>");
+	out.println("<td>"+city.getPoulation()+"</td>");
 	
 	out.println("<tr>");
 	

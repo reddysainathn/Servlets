@@ -11,6 +11,7 @@
 <h2 align="center">Clothes</h2>
 
 <form action="clothesPage">
+<div align="right">You got  ${count} in the cart</div>
 <div align="center">
 <table>
 

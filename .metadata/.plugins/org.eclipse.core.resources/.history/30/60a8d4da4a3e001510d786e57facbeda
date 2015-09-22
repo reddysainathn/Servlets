@@ -1,9 +1,0 @@
-package com.dao;
-
-import com.vo.City;
-public interface ICityDAO {
-	
-	public void addCity(City city);
-	
-
-}

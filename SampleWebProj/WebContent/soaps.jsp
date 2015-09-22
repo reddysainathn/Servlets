@@ -10,6 +10,8 @@
 
 <h2 align="center">Soap's</h2>
 
+<div align="right">You got  ${count} in the cart</div>
+
 <form action="soapPage">
 <div align="center">
 <table>

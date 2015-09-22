@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form action="/Forms/Controller" method="get">
+<!--< form action="/Forms/Controller" method="get">
 
 
 <input type="text" name="user" value="Sainath">
@@ -18,8 +18,8 @@
 
 
 </form>
-
-<form action="/Forms/Controller" method="post">
+ -->
+<form action="/Controller" method="post">
 
 <input type="text" name="id">
 

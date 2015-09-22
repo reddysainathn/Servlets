@@ -1,6 +1,0 @@
-HQL(Hibernate Query Language) will Overcome many problems to query with SQL
-
-	-->HQL is Object Oriented Query language
-		-->When we fetch records from DB server,we get Objects using HQL
-		-->We don't use any table or column details to query,we use Class and property details
-	-->HQL is not DataBase Independent

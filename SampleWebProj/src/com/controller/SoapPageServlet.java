@@ -40,7 +40,7 @@ public class SoapPageServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		
 		ShopCart cart = (ShopCart) session.getAttribute("cart");
-
+		session.setAttribute("count", cart.getItemList().size());
 		if (item4 != null) {
 			cart.getItemList().add(item4);
 		}

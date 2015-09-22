@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Simple.java&apos; to &apos;NoOfTablesJDBC/src/demo&apos;&#x0D;&#x0A;- Original project: &apos;Temp1&apos;&#x0D;&#x0A;- Destination element: &apos;NoOfTablesJDBC/src/demo&apos;&#x0D;&#x0A;- Original element: &apos;demo.Simple.java&apos;" description="Copy compilation unit" destination="=NoOfTablesJDBC/src&lt;demo" element1="/src&lt;demo{Simple.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1440202494490" units="1" version="1.0"/>
+</session>

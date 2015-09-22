@@ -13,11 +13,15 @@
 		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
 			<item value=""/>
+			<item value="C:\Users\Sainath Reddy\Desktop\Pharmacy_1"/>
 			<item value="C:\Users\Sainath Reddy\Desktop\New folder\SingleTable\Hibernate_SingleTable"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
-			<item value="C:\Users\Sainath Reddy\Dropbox\June15..6.30am\SingleTable.zip"/>
+			<item value="C:\Users\Sainath Reddy\Downloads\ajaxvalidation.zip"/>
+			<item value="C:\Users\Sainath Reddy\Downloads\onlinebanking (1).zip"/>
 			<item value=""/>
+			<item value="C:\Users\Sainath Reddy\Desktop\pharmacy.zip"/>
+			<item value="C:\Users\Sainath Reddy\Downloads\exception.zip"/>
 		</list>
 	</section>
 	<section name="WORKBENCH_SETTINGS">
@@ -25,8 +29,9 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.web.ui"/>
 		</list>
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">

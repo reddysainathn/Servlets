@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register Page</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script >
+$(document).ready(function(){
+	
+	$("#username").change(function(){
+		
+		var uname = $(this).val();
+		
+		$("#message").load("validateUnameServ?username="+uname);
+		
+		
+		
+	});
+	
+	
+});
+
+</script>
+
+</head>
+<body>
+
+
+	<h2 align="center">Register Form</h2>
+
+	<form id="registerForm" action="registerProcess" method="post">
+		<table>
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="username" id="username"/></td>
+				<td><div id="message"></div></td>
+			</tr>
+			<tr>
+				<td>First name</td>
+				<td><input type="text" name="firstname" /></td>
+			</tr>
+			<tr>
+				<td>Last name</td>
+				<td><input type="text" name="lastname" /></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email" /></td>
+			</tr>
+			<tr>
+				<td>city</td>
+				<td><input type="text" name="city" /></td>
+			</tr>
+			<tr>
+				<td>Phone</td>
+				<td><input type="text" name="phone" /></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="REGISTER" style="align: center"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

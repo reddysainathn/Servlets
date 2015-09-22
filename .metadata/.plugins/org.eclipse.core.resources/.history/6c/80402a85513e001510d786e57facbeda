@@ -1,6 +1,0 @@
-VO(Value Object)/DTO(Data Transfer object)
-
-VO means the Objects which holds some data.
-
-The Objects helps to transfer/carry data from one Object to another object is called DTO
-

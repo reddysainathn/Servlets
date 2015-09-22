@@ -1,0 +1,11 @@
+package com.mtc.app.example;
+
+public class Snippet {
+	<action name="register" class="mypack.Register">
+	<interceptor-ref name="jsonValidationWorkflowStack"></interceptor-ref>
+	
+	<result name="success">/welcome.jsp</result>
+	<result name="input">/index.jsp</result>
+	</action>
+}
+

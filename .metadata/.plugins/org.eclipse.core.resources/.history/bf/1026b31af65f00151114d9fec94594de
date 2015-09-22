@@ -1,0 +1,27 @@
+package com.mtc.app.service;
+
+import javax.ws.rs.Path;
+
+import com.mtc.app.dao.CityDAO;
+import com.mtc.app.dao.ICityDAO;
+import com.mtc.app.vo.City;
+
+
+@Path("/productService")
+public class ProductService {
+	
+	private ICityDAO cityDAO;
+	
+	public ProductService() {
+		// TODO Auto-generated constructor stub
+		cityDAO= new CityDAO();
+	}
+	
+	public City fetchCity(int id){
+		
+	return	cityDAO.getCityById(id);
+		
+		
+	}
+	
+}

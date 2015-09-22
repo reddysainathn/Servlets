@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.gjt.mm.mysql.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3333/eshop1</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        <mapping class="com.mtc.app.vo.Product"/>
+        <mapping class="com.mtc.app.vo.Item"/>
+        <mapping class="com.mtc.app.vo.Bid"/>
+        <mapping class="com.mtc.app.vo.User"/>
+        <mapping class="com.mtc.app.vo.Buyer"/>
+        <mapping class="com.mtc.app.vo.Seller"/>
+        <mapping class="com.mtc.app.vo.Address"/>
+        <mapping class="com.mtc.app.vo.Category"/>
+        <mapping class="com.mtc.app.vo.Supplier"/>
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+<package name="abc" extends="struts-default">
+
+<global-results>
+<result name="exhandler">exceptionhandler.jsp</result>
+</global-results>
+
+<global-exception-mappings>
+<exception-mapping result="exhandler" exception="java.lang.Exception"></exception-mapping>
+</global-exception-mappings>
+
+<action name="login" class="com.javatpoint.Login">
+<result name="success">login-success.jsp</result>
+<result name="error">login-error.jsp</result>
+</action>
+
+</package>
+</struts>    

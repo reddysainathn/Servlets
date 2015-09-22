@@ -1,0 +1,15 @@
+package com.mtc.app.service;
+
+import javax.ws.rs.Path;
+
+import com.mtc.app.vo.City;
+
+
+@Path("/productService")
+public class ProductService {
+	
+	public City fetchCity(int id){
+		
+	}
+	
+}

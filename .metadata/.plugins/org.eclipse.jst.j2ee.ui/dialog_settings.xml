@@ -3,9 +3,11 @@
 	<item value="true" key="J2EE_EXPORT_OVERWRITE"/>
 	<item value="false" key="J2EE_EXPORT_SOURCE"/>
 	<list key="MRU_RUNTIME_STORE">
+		<item value="NULL_RUNTIME"/>
 		<item value="Apache Tomcat v7.0"/>
 	</list>
 	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\Users\Sainath Reddy\Desktop\HibStructsProj.war"/>
 		<item value="C:\SOFT\servlets\Deployment.war"/>
 	</list>
 </section>
